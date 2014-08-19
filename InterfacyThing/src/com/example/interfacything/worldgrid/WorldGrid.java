@@ -63,6 +63,13 @@ public class WorldGrid {
 		for (int i=0; i<screenSize.y; i+=gridSize.y){
 			c.drawLine(0, i+gridOffset.y, screenSize.x, i+gridOffset.y, paint);
 		}
+		drawOrigin(c);
+	}
+	
+	public void drawOrigin(Canvas c){
+		paint.setColor(Color.GREEN);
+		
+		c.drawCircle(globalOffset.x+currentPanOffset.x, globalOffset.y+currentPanOffset.y, gridSize.x, paint);
 	}
 	
 	public void updateOffset(float x, float y){
