@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <color name="background_panel_color_brush_info">#FCFCFC</color>
+    <color name="button_highlight_color">#FCFCFC</color>
+    <color name="button_regular_color">#a9a9a9</color>
+
 </resources>

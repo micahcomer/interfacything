@@ -47,6 +47,7 @@
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/rlBrushInfoPanel"
             android:layout_toLeftOf="@+id/rlBrushInfoPanel"
+            android:onClick="buttonClick"
             android:text="S" />
 
         <Button
@@ -56,6 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/bSelect"
             android:layout_toLeftOf="@+id/bSelect"
+            android:onClick="buttonClick"
             android:text="E" />
 
         <Button
@@ -65,15 +67,26 @@
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/bErase"
             android:layout_toLeftOf="@+id/bErase"
+            android:onClick="buttonClick"
             android:text="P" />
+
+        <Button
+            android:id="@+id/bMove"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/bPaint"
+            android:layout_toLeftOf="@+id/bPaint"
+            android:onClick="buttonClick"
+            android:text="M" />
 
         <CheckBox
             android:id="@+id/cbGrid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/bPaint"
-            android:layout_alignBottom="@+id/bPaint"
-            android:layout_toLeftOf="@+id/bPaint"
+            android:layout_alignBaseline="@+id/bMove"
+            android:layout_alignBottom="@+id/bMove"
+            android:layout_toLeftOf="@+id/bMove"
             android:text="GRID" />
     </RelativeLayout>
 
