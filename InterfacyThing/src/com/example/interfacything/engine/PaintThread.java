@@ -58,7 +58,7 @@ public class PaintThread extends Thread{
 			long beforeTime = System.nanoTime();
 			//This is where we update the game engine
 			//UPDATE HERE!!!!!!!
-				
+				Log.d("UPDATE", String.valueOf(System.nanoTime()));
 				//TODO: UPDATE CODE GOES HERE
 				gsm.Update(beforeTime);
 			
@@ -74,7 +74,7 @@ public class PaintThread extends Thread{
 					//DRAW HERE!!!!!!						
 						//TODO: DRAW CODE GOES HERE
 						gsm.Draw(c);
-									
+					//	Log.d("DRAW", String.valueOf(System.nanoTime()));					
 				}
 			}
 			catch (NullPointerException e){
